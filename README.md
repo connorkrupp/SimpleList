@@ -8,11 +8,19 @@ This whole project is to implement loads of technologies (listed below). I just 
 I want to use as many components and features of Xcode, Swift, and debugging tools as I can to get as much practice as I can. Specifically, I want to practice best practices for iOS development. I don't want to cut any corners on this one.
 
 ### What technologies will you implement?
+I plan to (eventually) support:
+
+* iPhone
+* iPad
+* Apple Watch
+* Mac OS X
+
 So far I plan to use the following:
 
 * UITableView
 * UINavigationViewController
 * UISplitViewController
+* Force Touch!!!
 * CoreData
 * Localization
 * Auto Layout
