@@ -5,7 +5,7 @@ iOS list app for testing frameworks and features such as iCloud, TouchID, etc.
 This whole project is to implement loads of technologies (listed below). I just needed something simple that would allow me to practice all these features. I just don't want the app to be the center of attention, I want the implementation to fill that role.
 
 ### What is the goal?
-I want to use as many components and features of Xcode, Swift, and debugging tools as I can to get as much practice as I can. Specifically, I want to practice best practices for iOS development. I don't want to cut any corners on this one.
+I want to use as many components and features of Xcode, Swift, and debugging tools as I can to practice creating a full featured app. Specifically, I want to practice best practices for iOS development. I don't want to cut any corners on this one.
 
 ### What technologies will you implement?
 I plan to (eventually) support:
