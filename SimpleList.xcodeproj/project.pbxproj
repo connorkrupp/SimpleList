@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		70665BA61BBF1EEE00C8EDB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70665BA51BBF1EEE00C8EDB9 /* AppDelegate.swift */; };
-		70665BA81BBF1EEE00C8EDB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70665BA71BBF1EEE00C8EDB9 /* ViewController.swift */; };
+		70665BA81BBF1EEE00C8EDB9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70665BA71BBF1EEE00C8EDB9 /* ListViewController.swift */; };
 		70665BAB1BBF1EEE00C8EDB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70665BA91BBF1EEE00C8EDB9 /* Main.storyboard */; };
 		70665BAE1BBF1EEE00C8EDB9 /* SimpleList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70665BAC1BBF1EEE00C8EDB9 /* SimpleList.xcdatamodeld */; };
 		70665BB01BBF1EEE00C8EDB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70665BAF1BBF1EEE00C8EDB9 /* Assets.xcassets */; };
@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		70665BA21BBF1EEE00C8EDB9 /* SimpleList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70665BA51BBF1EEE00C8EDB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		70665BA71BBF1EEE00C8EDB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		70665BA71BBF1EEE00C8EDB9 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		70665BAA1BBF1EEE00C8EDB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70665BAD1BBF1EEE00C8EDB9 /* SimpleList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleList.xcdatamodel; sourceTree = "<group>"; };
 		70665BAF1BBF1EEE00C8EDB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				70665BA51BBF1EEE00C8EDB9 /* AppDelegate.swift */,
-				70665BA71BBF1EEE00C8EDB9 /* ViewController.swift */,
+				70665BA71BBF1EEE00C8EDB9 /* ListViewController.swift */,
 				70665BA91BBF1EEE00C8EDB9 /* Main.storyboard */,
 				70665BAF1BBF1EEE00C8EDB9 /* Assets.xcassets */,
 				70665BB11BBF1EEE00C8EDB9 /* LaunchScreen.storyboard */,
@@ -259,7 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70665BAE1BBF1EEE00C8EDB9 /* SimpleList.xcdatamodeld in Sources */,
-				70665BA81BBF1EEE00C8EDB9 /* ViewController.swift in Sources */,
+				70665BA81BBF1EEE00C8EDB9 /* ListViewController.swift in Sources */,
 				70665BA61BBF1EEE00C8EDB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
