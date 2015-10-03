@@ -16,6 +16,7 @@
 		70665BBE1BBF1EEE00C8EDB9 /* SimpleListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70665BBD1BBF1EEE00C8EDB9 /* SimpleListTests.swift */; };
 		70665BC91BBF1EEE00C8EDB9 /* SimpleListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70665BC81BBF1EEE00C8EDB9 /* SimpleListUITests.swift */; };
 		70665BD71BBF5F3600C8EDB9 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70665BD61BBF5F3600C8EDB9 /* ListItem.swift */; settings = {ASSET_TAGS = (); }; };
+		70665BD91BBF75DB00C8EDB9 /* ListItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70665BD81BBF75DB00C8EDB9 /* ListItemDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		70665BC81BBF1EEE00C8EDB9 /* SimpleListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListUITests.swift; sourceTree = "<group>"; };
 		70665BCA1BBF1EEE00C8EDB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70665BD61BBF5F3600C8EDB9 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		70665BD81BBF75DB00C8EDB9 /* ListItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +105,11 @@
 			children = (
 				70665BA51BBF1EEE00C8EDB9 /* AppDelegate.swift */,
 				70665BA71BBF1EEE00C8EDB9 /* ListViewController.swift */,
+				70665BD81BBF75DB00C8EDB9 /* ListItemDetailViewController.swift */,
 				70665BD61BBF5F3600C8EDB9 /* ListItem.swift */,
 				70665BA91BBF1EEE00C8EDB9 /* Main.storyboard */,
-				70665BAF1BBF1EEE00C8EDB9 /* Assets.xcassets */,
 				70665BB11BBF1EEE00C8EDB9 /* LaunchScreen.storyboard */,
+				70665BAF1BBF1EEE00C8EDB9 /* Assets.xcassets */,
 				70665BB41BBF1EEE00C8EDB9 /* Info.plist */,
 				70665BAC1BBF1EEE00C8EDB9 /* SimpleList.xcdatamodeld */,
 			);
@@ -264,6 +267,7 @@
 				70665BD71BBF5F3600C8EDB9 /* ListItem.swift in Sources */,
 				70665BAE1BBF1EEE00C8EDB9 /* SimpleList.xcdatamodeld in Sources */,
 				70665BA81BBF1EEE00C8EDB9 /* ListViewController.swift in Sources */,
+				70665BD91BBF75DB00C8EDB9 /* ListItemDetailViewController.swift in Sources */,
 				70665BA61BBF1EEE00C8EDB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

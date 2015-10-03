@@ -14,13 +14,20 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     // MARK: Properties
     
     @IBOutlet weak var listTableView: UITableView!
-    var listItems = [ListItem]()
+    
+    var listItems = [ListItem]() {
+        didSet {
+            listItems.sortInPlace {
+                $0.createDate.compare($1.createDate) == NSComparisonResult.OrderedDescending
+            }
+        }
+    }
     
     // MARK: View Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadData()
+        loadListData()
         listTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "standardCell")
     }
 
@@ -58,29 +65,45 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
     }
     
+    // MARK: UITableViewDelegate
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("toDetail", sender: self)
+    }
+    
+    // MARK: UIStoryboardSegue Handling
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toDetail" {
+            let destinationViewController = segue.destinationViewController as! ListItemDetailViewController
+            let indexPath = listTableView.indexPathForSelectedRow!
+            destinationViewController.listItem = listItems[indexPath.row]
+        }
+    }
+    
     // MARK: Data Handling
     
-    func saveData(item: ListItem) {
+    func saveData(listItem: ListItem) {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
         
         let entity =  NSEntityDescription.entityForName("ListItem", inManagedObjectContext:managedContext)
-        let listItem = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+        let managedListItem = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
         
-        listItem.setValue(item.title, forKey: "title")
-        listItem.setValue(item.desc, forKey: "desc")
-        listItem.setValue(item.createDate, forKey: "createDate")
-        listItem.setValue(item.dueDate, forKey: "dueDate")
+        managedListItem.setValue(listItem.title, forKey: "title")
+        managedListItem.setValue(listItem.desc, forKey: "desc")
+        managedListItem.setValue(listItem.createDate, forKey: "createDate")
+        managedListItem.setValue(listItem.dueDate, forKey: "dueDate")
         
         do {
             try managedContext.save()
-            listItems.append(item)
+            listItems.append(listItem)
         } catch let error as NSError  {
             print("Could not save \(error), \(error.userInfo)")
         }
     }
     
-    func loadData() {
+    func loadListData() {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
         
@@ -88,18 +111,14 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         do {
             let results = try managedContext.executeFetchRequest(fetchRequest)
-            for listItem in results {
-                listItems.append(ListItem(managedListItem: listItem as! NSManagedObject))
-            }
-            listItems.sortInPlace {
-                $0.createDate.compare($1.createDate) == NSComparisonResult.OrderedDescending
+            // Map each NSManagedObject to its ListItem equivalent
+            listItems = results.map {
+                ListItem(managedListItem: ($0 as! NSManagedObject))
             }
         } catch let error as NSError {
             print("Could not fetch \(error), \(error.userInfo)")
         }
     }
-    
-
 
 }
 
