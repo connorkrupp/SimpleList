@@ -17,6 +17,7 @@
 		70665BC91BBF1EEE00C8EDB9 /* SimpleListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70665BC81BBF1EEE00C8EDB9 /* SimpleListUITests.swift */; };
 		70665BD71BBF5F3600C8EDB9 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70665BD61BBF5F3600C8EDB9 /* ListItem.swift */; settings = {ASSET_TAGS = (); }; };
 		70665BD91BBF75DB00C8EDB9 /* ListItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70665BD81BBF75DB00C8EDB9 /* ListItemDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		70C75E661BBF9CD700EAC656 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 70C75E651BBF9CD700EAC656 /* README.md */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		70665BCA1BBF1EEE00C8EDB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70665BD61BBF5F3600C8EDB9 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		70665BD81BBF75DB00C8EDB9 /* ListItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemDetailViewController.swift; sourceTree = "<group>"; };
+		70C75E651BBF9CD700EAC656 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		70665B991BBF1EEE00C8EDB9 = {
 			isa = PBXGroup;
 			children = (
+				70C75E651BBF9CD700EAC656 /* README.md */,
 				70665BA41BBF1EEE00C8EDB9 /* SimpleList */,
 				70665BBC1BBF1EEE00C8EDB9 /* SimpleListTests */,
 				70665BC71BBF1EEE00C8EDB9 /* SimpleListUITests */,
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C75E661BBF9CD700EAC656 /* README.md in Sources */,
 				70665BD71BBF5F3600C8EDB9 /* ListItem.swift in Sources */,
 				70665BAE1BBF1EEE00C8EDB9 /* SimpleList.xcdatamodeld in Sources */,
 				70665BA81BBF1EEE00C8EDB9 /* ListViewController.swift in Sources */,
@@ -495,6 +499,7 @@
 				70665BCF1BBF1EEE00C8EDB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70665BD01BBF1EEE00C8EDB9 /* Build configuration list for PBXNativeTarget "SimpleListTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +508,7 @@
 				70665BD21BBF1EEE00C8EDB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70665BD31BBF1EEE00C8EDB9 /* Build configuration list for PBXNativeTarget "SimpleListUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +517,7 @@
 				70665BD51BBF1EEE00C8EDB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

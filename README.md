@@ -10,20 +10,20 @@ I want to use as many components and features of Xcode, Swift, and debugging too
 ### What technologies will you implement?
 I plan to (eventually) support:
 
-* iPhone
+* ~~iPhone~~
 * iPad
 * Apple Watch
 * Mac OS X
 
 So far I plan to use the following:
 
-* UITableView
-* UINavigationViewController
+* ~~UITableView~~
+* ~~UINavigationViewController~~
 * UISplitViewController
 * Force Touch!!!
-* CoreData
+* ~~Core Data~~
 * Localization
-* Auto Layout
+* ~~Auto Layout~~
 * iCloud
 * TouchID Authentification
 * Gestures
