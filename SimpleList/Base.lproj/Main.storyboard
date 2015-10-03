@@ -25,7 +25,7 @@
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bCy-ht-Uof" id="SaQ-5n-S8T">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                         </tableViewCellContentView>
@@ -47,14 +47,20 @@
                             <constraint firstItem="qdR-vT-pP8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yM5-GR-fFv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="SimpleList" id="kS0-xM-aeS"/>
+                    <navigationItem key="navigationItem" title="SimpleList" id="kS0-xM-aeS">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lrw-wx-4h5">
+                            <connections>
+                                <action selector="add:" destination="BYZ-38-t0r" id="yXZ-uR-cHX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="listTableView" destination="qdR-vT-pP8" id="ddh-Ue-f1M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1144" y="1089"/>
+            <point key="canvasLocation" x="958" y="1089"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Nh-Dz-4CQ">
